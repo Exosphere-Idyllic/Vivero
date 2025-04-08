@@ -1,107 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivero Orgánico VerdeVida</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recuerdos del Bosque</title>
+  <link rel="stylesheet" href="Styles/styles.css"/>
 </head>
 <body>
+  <header class="site-header">
+    <h1 class="logo">Recuerdos del Bosque</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Plantas</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Encabezado -->
-<header id="main-header" class="header">
-    <div class="container">
-        <h1 id="site-title" class="logo">Vivero Orgánico VerdeVida</h1>
-        <nav id="main-nav" class="nav">
-            <ul class="nav-list">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#productos" class="nav-link">Productos</a></li>
-                <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+  <main class="grid-layout">
+    <section class="hero">
+      <h2>Conecta con la naturaleza</h2>
+      <p>Vivero orgánico con plantas únicas y cuidados personalizados.</p>
+      <a href="#" class="btn-primary">Explorar</a>
+    </section>
 
-<!-- Sección Principal -->
-<main id="main-content">
+    <section class="feature plant-box">
+      <h3>Plantas Medicinales</h3>
+      <p>Desde lavanda hasta romero, descubre su poder natural.</p>
+    </section>
 
-<!-- Inicio -->
-<section id="inicio" class="section inicio">
-    <div class="container">
-        <h2>Bienvenidos a VerdeVida</h2>
-        <p>Tu vivero de confianza para plantas, árboles frutales y productos orgánicos.</p>
-    </div>
-</section>
+    <section class="feature plant-box">
+      <h3>Decorativas</h3>
+      <p>Ideales para interiores y exteriores con estilo y frescura.</p>
+    </section>
 
-<!-- Productos -->
-<section id="productos" class="section productos">
-    <div class="container">
-        <h2>Nuestros Productos</h2>
-            <div class="productos-grid">
-                <div class="producto-card">
-                    <img src="img/plantas.jpg" alt="Plantas Orgánicas">
-                    <h3 class="producto-titulo">Plantas Orgánicas</h3>
-                </div>
-                <div class="producto-card">
-                    <img src="img/arboles.jpg" alt="Árboles Frutales">
-                    <h3 class="producto-titulo">Árboles Frutales</h3>
-                </div>
-                <div class="producto-card">
-                    <img src="img/abono.jpg" alt="Abonos Naturales">
-                    <h3 class="producto-titulo">Abonos Naturales</h3>
-                </div>
-        </div>
-    </div>
-</section>
+    <section class="feature plant-box">
+      <h3>Huerto en Casa</h3>
+      <p>Inicia tu propio cultivo urbano con nuestras guías y kits.</p>
+    </section>
+  </main>
 
-<!-- Servicios -->
-<section id="servicios" class="section servicios">
-    <div class="container">
-        <h2>Servicios</h2>
-        <ul class="servicios-lista">
-            <li>Asesoría en jardinería y cultivos orgánicos</li>
-            <li>Instalación de huertos urbanos</li>
-            <li>Diseño de jardines ecológicos</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Nosotros -->
-<section id="nosotros" class="section nosotros">
-    <div class="container">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos un vivero comprometido con el medio ambiente. Promovemos prácticas agrícolas sostenibles y ofrecemos productos 100% naturales.</p>
-    </div>
-</section>
-
-<!-- Contacto -->
-<section id="contacto" class="section contacto">
-    <div class="container">
-        <h2>Contáctanos</h2>
-        <form id="contact-form" class="formulario-contacto">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-        <button type="submit" class="btn-enviar">Enviar</button>
-        </form>
-    </div>
-</section>
-
-</main>
-
-<!-- Pie de página -->
-<footer id="footer" class="footer">
-    <div class="container">
-        <p>&copy; 2025 Vivero Orgánico VerdeVida. Todos los derechos reservados.</p>
-    </div>
-</footer>
+  <footer class="site-footer">
+    <p>&copy; 2025 Recuerdos del Bosque. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
