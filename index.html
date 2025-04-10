@@ -1,81 +1,150 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Recuerdos del Bosque</title>
-  <link rel="stylesheet" href="Styles/styles.css"/>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Vivero Recuerdos del Bosque</title>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="logo">Recuerdos del Bosque</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Plantas</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="grid-layout">
-    <section class="hero">
-      <h2>Conecta con la naturaleza</h2>
-      <p>Vivero orgánico con plantas únicas y cuidados personalizados.</p>
-      <a href="#" class="btn-primary">Explorar</a>
-    </section>
-
-    <section class="feature plant-box">
-      <h3>Plantas Medicinales</h3>
-      <p>Desde lavanda hasta romero, descubre su poder natural.</p>
-    </section>
-
-    <section class="feature plant-box">
-      <h3>Decorativas</h3>
-      <p>Ideales para interiores y exteriores con estilo y frescura.</p>
-    </section>
-
-    <section class="feature plant-box">
-      <h3>Huerto en Casa</h3>
-      <p>Inicia tu propio cultivo urbano con nuestras guías y kits.</p>
-    </section>
-  </main>
-<!-- Sobre Nosotros -->
-<section class="about-us">
-  <div class="about-text">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos un vivero orgánico comprometido con la biodiversidad y la conexión con la tierra. Cultivamos con respeto por los ciclos naturales y ofrecemos asesoría personalizada para cada planta.</p>
-  </div>
-  <div class="about-image">
-    <img src="Img/latest.webp" alt="Equipo de Recuerdos del Bosque" />
-  </div>
+<!--Header-->
+<header>
+    <!--Menú de navegación-->
+    <div class="container">
+        <nav class="nav-menu">
+            <a href="#" id="btn-about">Acerca de</a>
+            <a href="#" id="btn-menu">Menú</a>
+            <a href="#" id="btn-gallery">Galería</a>
+            <a href="#" id="btn-location">Ubicación</a>
+        </nav>
+        <div class="text">
+            <h1 class="c-name">Vivero <span>Recuerdos del Bosque</span></h1>
+            <h3>Conectando raíces, naturaleza y memorias vivas.</h3>
+        </div>
+    </div>
+</header>
+<!--Header fin-->
+<!--Main-->
+<section class="main">
+<section class="about" id="about">
+    <!--inicio del acerca-->
+    <div class="container">
+        <article>
+            <h3>Acerca de</h3>
+            <p>
+                Fundado en <strong>1980</strong> en el corazón del <em>centro histórico de Cuenca, Ecuador</em>, 
+                <strong>Recuerdos del Bosque</strong> ha sido un refugio para los amantes de la naturaleza y las plantas. 
+                Es un lugar donde el amor por la tierra se encuentra con el diseño ecológico y la sabiduría ancestral.
+            </p>
+            <p>
+                Nuestra identidad se enraíza en el respeto por el entorno natural y en ofrecer especies únicas, 
+                desde plantas ornamentales hasta medicinales, en un ambiente inspirado en los bosques nublados de los Andes. 
+                Aquí, cada hoja cuenta una historia, y cada visitante se convierte en parte de ella.
+            </p>
+        </article>
+    </div>
 </section>
 
-<!-- Productos Destacados -->
-<section class="product-section">
-  <h2 class="section-title">Nuestros Productos</h2>
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="Img/lavanda-img.webp" alt="Lavanda" />
-      <h3>Lavanda Orgánica</h3>
-      <p>Aroma relajante, ideal para interiores.</p>
-    </div>
-    <div class="product-card">
-      <img src="Img/mint-img.webp" alt="Menta" />
-      <h3>Menta Fresca</h3>
-      <p>Perfecta para infusiones y huertos urbanos.</p>
-    </div>
-    <div class="product-card">
-      <img src="Img/lavanda-img.webp" alt="Kit Huerto" />
-      <h3>Kit Huerto en Casa</h3>
-      <p>Todo lo que necesitas para comenzar tu cultivo.</p>
-    </div>
-  </div>
+<!--Contenido-->
+<!--Layout dancen-->
+<section class="content-grind">
+    <div class="layout-dance">
+
+        <div class="box box-1">
+          🌿 Plantas Medicinales
+          <div class="box-content">
+            <div class="product">
+              <img src="Img/ruda.jpg" alt="Ruda">
+              <p><strong>Ruda</strong>: infusión calmante.</p>
+            </div>
+            <div class="product">
+              <img src="Img/manzanilla.jpg" alt="Manzanilla">
+              <p><strong>Manzanilla</strong>: digestiva y relajante.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="box box-2">
+          🌸 Flores Ornamentales
+          <div class="box-content">
+            <div class="product">
+              <img src="Img/hortensia.webp" alt="Hortensia">
+              <p><strong>Hortensia</strong>: flor grande y colorida.</p>
+            </div>
+            <div class="product">
+              <img src="Img/begonia.jpg" alt="Begonia">
+              <p><strong>Begonia</strong>: perfecta para sombra.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="box box-3">
+          🌵 Suculentas
+          <div class="box-content">
+            <div class="product">
+              <img src="Img/hecheveria.jpg" alt="Echeveria">
+              <p><strong>Echeveria</strong>: fácil de cuidar.</p>
+            </div>
+            <div class="product">
+              <img src="Img/haworthia.webp" alt="Haworthia">
+              <p><strong>Haworthia</strong>: pequeña y decorativa.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="box box-4">
+          🌱 Macetas Ecológicas
+          <div class="box-content">
+            <div class="product">
+              <img src="Img/maceta-de-barro.jpg" alt="Maceta de barro">
+              <p><strong>Barro</strong>: natural y transpirable.</p>
+            </div>
+            <div class="product">
+              <img src="Img/maceta_biodegradables.webp" alt="Maceta biodegradable">
+              <p><strong>Biodegradable</strong>: eco-friendly.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="box box-5">
+          🪴 Cuidado de Plantas
+          <div class="box-content">
+            <div class="product">
+              <img src="Img/compost.jpg" alt="Compost orgánico">
+              <p><strong>Compost</strong>: mejora la tierra.</p>
+            </div>
+            <div class="product">
+              <img src="Img/abono-liquido.webp" alt="Abono líquido">
+              <p><strong>Abono líquido</strong>: nutrientes directos.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="box box-6">
+          🍃 Aromáticas y Culinarias
+          <div class="box-content">
+            <div class="product">
+              <img src="Img/albahaca.jpg" alt="Albahaca">
+              <p><strong>Albahaca</strong>: aroma y sabor frescos.</p>
+            </div>
+            <div class="product">
+              <img src="Img/romero.jpg" alt="Romero">
+              <p><strong>Romero</strong>: perfecto para asados.</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      
 </section>
 
-  <footer class="site-footer">
+<footer class="site-footer">
     <p>&copy; 2025 Recuerdos del Bosque. Todos los derechos reservados.</p>
-  </footer>
+</footer>
+
+</section>
 </body>
 </html>
