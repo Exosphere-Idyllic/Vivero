@@ -157,7 +157,7 @@ header .text h3 {
 
 /* Artículo de texto junto a la imagen */
 .main .about article {
-  background-color: white;
+  background-color: #ECADC4;
   padding: 20px;
   width: 75%;
   position: relative;
