@@ -3,6 +3,9 @@
 <head>
     <!-- Enlace al archivo CSS principal -->
     <link rel="stylesheet" href="Styles/styles.css">
+
+    <!-- Enlace al archivo JS principal -->
+    <script src="javaScript/javascript.js"></script>
     
     <!-- Configuración de codificación y responsive -->
     <meta charset="UTF-8">
@@ -20,6 +23,7 @@
 </head>
 <body>
 
+<section class="main">
 <!-- ===== HEADER ===== -->
 <header>
     <div class="container">
@@ -40,7 +44,7 @@
 </header>
 
 <!-- ===== SECCIÓN PRINCIPAL ===== -->
-<section class="main">
+
 
     <!-- Sección Acerca de -->
     <section class="about" id="about">
@@ -48,114 +52,172 @@
             <article>
                 <h3>Acerca de</h3>
                 <p>
-                  Fundado en <strong>1980</strong> en el corazón del <em>centro histórico de Cuenca, Ecuador</em>, 
-                  <strong>Recuerdos del Bosque</strong> ha sido un refugio para los amantes de la naturaleza y las plantas. 
-                  Es un lugar donde el amor por la tierra se encuentra con el diseño ecológico y la sabiduría ancestral.
-              </p>
-              <p>
-                  Nuestra identidad se enraíza en el respeto por el entorno natural y en ofrecer especies únicas, 
-                  desde plantas ornamentales hasta medicinales, en un ambiente inspirado en los bosques nublados de los Andes. 
-                  Aquí, cada hoja cuenta una historia, y cada visitante se convierte en parte de ella.
-              </p>
+                Fundado en <strong>1980</strong> en el corazón del <em>centro histórico de Cuenca, Ecuador</em>, 
+                <strong>Recuerdos del Bosque</strong> ha sido un refugio para los amantes de la naturaleza y las plantas. 
+                Es un lugar donde el amor por la tierra se encuentra con el diseño ecológico y la sabiduría ancestral.
+            </p>
+            <p>
+                Nuestra identidad se enraíza en el respeto por el entorno natural y en ofrecer especies únicas, 
+                desde plantas ornamentales hasta medicinales, en un ambiente inspirado en los bosques nublados de los Andes. 
+                Aquí, cada hoja cuenta una historia, y cada visitante se convierte en parte de ella.
+            </p>
             </article>
         </div>
     </section>
 
-    <!-- ===== GRID DE PRODUCTOS ===== -->
-    <section class="content-grind">
-        <div class="layout-dance">
+    <section class="products-container">
+        <!-- Cada "accordion" representa una categoría -->
 
-            <!-- Caja: Plantas Medicinales -->
-            <div class="box box-1">
-                🌿 Plantas Medicinales
-                <div class="box-content">
-                    <div class="product">
-                        <img src="Img/ruda.jpg" alt="Ruda">
-                        <p><strong>Ruda</strong>: infusión calmante.</p>
+        <div class="accordion">
+            <button class="accordion-header">
+                <img src="Img/tradicionales.jpg" alt="Plantas Medicinales">
+                <span>Plantas Medicinales</span>
+            </button>
+            <div class="accordion-content">
+                <div class="product-item">
+                    <img src="Img/ruda.jpg" alt="Ruda">
+                    <div>
+                        <h4>Ruda</h4>
+                        <p>Infusión calmante - <strong>$3.00</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
                     </div>
-                    <div class="product">
-                        <img src="Img/manzanilla.jpg" alt="Manzanilla">
-                        <p><strong>Manzanilla</strong>: digestiva y relajante.</p>
+                </div>
+                <div class="product-item">
+                    <img src="Img/manzanilla.jpg" alt="Manzanilla">
+                    <div>
+                        <h4>Manzanilla</h4>
+                        <p>Digestiva y relajante - <strong>$2.50</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Caja: Flores Ornamentales -->
-            <div class="box box-2">
-                🌸 Flores Ornamentales
-                <div class="box-content">
-                    <div class="product">
-                        <img src="Img/hortensia.webp" alt="Hortensia">
-                        <p><strong>Hortensia</strong>: flor grande y colorida.</p>
-                    </div>
-                    <div class="product">
-                        <img src="Img/begonia.jpg" alt="Begonia">
-                        <p><strong>Begonia</strong>: perfecta para sombra.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caja: Suculentas -->
-            <div class="box box-3">
-                🌵 Suculentas
-                <div class="box-content">
-                    <div class="product">
-                        <img src="Img/hecheveria.jpg" alt="Echeveria">
-                        <p><strong>Echeveria</strong>: fácil de cuidar.</p>
-                    </div>
-                    <div class="product">
-                        <img src="Img/haworthia.webp" alt="Haworthia">
-                        <p><strong>Haworthia</strong>: pequeña y decorativa.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caja: Macetas -->
-            <div class="box box-4">
-                🌱 Macetas Ecológicas
-                <div class="box-content">
-                    <div class="product">
-                        <img src="Img/maceta-de-barro.jpg" alt="Maceta de barro">
-                        <p><strong>Barro</strong>: natural y transpirable.</p>
-                    </div>
-                    <div class="product">
-                        <img src="Img/maceta_biodegradables.webp" alt="Maceta biodegradable">
-                        <p><strong>Biodegradable</strong>: eco-friendly.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caja: Cuidado de plantas -->
-            <div class="box box-5">
-                🪴 Cuidado de Plantas
-                <div class="box-content">
-                    <div class="product">
-                        <img src="Img/compost.jpg" alt="Compost orgánico">
-                        <p><strong>Compost</strong>: mejora la tierra.</p>
-                    </div>
-                    <div class="product">
-                        <img src="Img/abono-liquido.webp" alt="Abono líquido">
-                        <p><strong>Abono líquido</strong>: nutrientes directos.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caja: Plantas Aromáticas -->
-            <div class="box box-6">
-                🍃 Aromáticas y Culinarias
-                <div class="box-content">
-                    <div class="product">
-                        <img src="Img/albahaca.jpg" alt="Albahaca">
-                        <p><strong>Albahaca</strong>: aroma y sabor frescos.</p>
-                    </div>
-                    <div class="product">
-                        <img src="Img/romero.jpg" alt="Romero">
-                        <p><strong>Romero</strong>: perfecto para asados.</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <div class="accordion">
+            <button class="accordion-header">
+                <img src="Img/ornamentales.webp" alt="Flores Ornamentales">
+                <span>Flores Ornamentales</span>
+            </button>
+            <div class="accordion-content">
+                <div class="product-item">
+                    <img src="Img/hortensia.webp" alt="Hortensia">
+                    <div>
+                        <h4>Hortensia</h4>
+                        <p>Flor grande y colorida - <strong>$5.00</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Img/begonia.jpg" alt="Begonia">
+                    <div>
+                        <h4>Begonia</h4>
+                        <p>Perfecta para sombra - <strong>$4.00</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-header">
+                <img src="Img/aromaticas.webp" alt="Plantas Aromáticas">
+                <span>Aromáticas y Culinarias</span>
+            </button>
+            <div class="accordion-content">
+                <div class="product-item">
+                    <img src="Img/albahaca.jpg" alt="Albahaca">
+                    <div>
+                        <h4>Albahaca</h4>
+                        <p>Aroma y sabor frescos - <strong>$2.00</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Img/romero.jpg" alt="Romero">
+                    <div>
+                        <h4>Romero</h4>
+                        <p>Perfecto para asados - <strong>$2.50</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-header">
+                <img src="Img/suculentas.jpg" alt="Suculentas">
+                <span>Suculentas</span>
+            </button>
+            <div class="accordion-content">
+                <div class="product-item">
+                    <img src="Img/hecheveria.jpg" alt="Echeveria">
+                    <div>
+                        <h4>Echeveria</h4>
+                        <p>Fácil de cuidar - <strong>$3.50</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Img/haworthia.webp" alt="Haworthia">
+                    <div>
+                        <h4>Haworthia</h4>
+                        <p>Pequeña y decorativa - <strong>$3.00</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-header">
+                <img src="Img/macetas.webp" alt="Macetas Ecológicas">
+                <span>Macetas Ecológicas</span>
+            </button>
+            <div class="accordion-content">
+                <div class="product-item">
+                    <img src="Img/maceta-de-barro.jpg" alt="Maceta de barro">
+                    <div>
+                        <h4>Maceta de Barro</h4>
+                        <p>Natural y transpirable - <strong>$6.00</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Img/maceta_biodegradables.webp" alt="Maceta Biodegradable">
+                    <div>
+                        <h4>Maceta Biodegradable</h4>
+                        <p>Eco-friendly - <strong>$5.00</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-header">
+                <img src="Img/cuidado.jpg" alt="Cuidado de Plantas">
+                <span>Cuidado de Plantas</span>
+            </button>
+            <div class="accordion-content">
+                <div class="product-item">
+                    <img src="Img/compost.jpg" alt="Compost orgánico">
+                    <div>
+                        <h4>Compost</h4>
+                        <p>Mejora la tierra - <strong>$7.00</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Img/abono-liquido.webp" alt="Abono líquido">
+                    <div>
+                        <h4>Abono Líquido</h4>
+                        <p>Nutrientes directos - <strong>$4.50</strong></p>
+                        <a href="compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Pie de página -->

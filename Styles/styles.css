@@ -126,14 +126,20 @@ header .text h3 {
 .site-footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: #84B48D;
+  background: linear-gradient(to top, rgba(132, 180, 141, 1), rgba(132, 180, 141, 0.5));
   color: white;
   margin-top: 2rem;
 }
 
+
 /* ===================== */
 /* SECCIÓN ABOUT         */
 /* ===================== */
+.main {
+  background: url('../Img/BG-Tables-texture.jpg');
+  background-repeat: repeat;
+}
+
 .main .about .container {
   overflow: visible;
   position: relative;
@@ -157,7 +163,7 @@ header .text h3 {
 
 /* Artículo de texto junto a la imagen */
 .main .about article {
-  background-color: #ECADC4;
+  background-color: white;
   padding: 20px;
   width: 75%;
   position: relative;
@@ -180,103 +186,146 @@ header .text h3 {
   margin-bottom: 15px;
 }
 
-/* ===================== */
-/* LAYOUT DANCE (GRID)   */
-/* ===================== */
-.layout-dance {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  grid-auto-rows: 150px;                 /* Altura base de cada fila */
-  gap: 1rem;                             /* Espacio entre elementos */
-  padding: 2rem;
+/* ============================== */
+/* ESTILOS PARA PRODUCTOS (ACCORDION) */
+/* ============================== */
+
+.products-container {
   max-width: 1200px;
-  margin: auto;
-}
-
-/* Cajas dentro del grid */
-.box {
-  background: var(--primary);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: white;
-  text-align: center;
+  margin: 2rem auto;
   padding: 1rem;
-  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.4s ease; /* Transición mejorada */
-}
-
-/* Hover de cajas: animación suave */
-.box:hover {
-  transform: scale(1.03);
-  background-color: var(--accent);
-}
-
-/* Distribución específica de cajas en el grid */
-.box-1 { grid-column: span 1; grid-row: span 2; }
-.box-2 { grid-column: span 2; grid-row: span 2; }
-.box-3 { grid-column: 3; grid-row: span 1; }
-.box-4 { grid-column: 3; grid-row: 2 / 3; }
-.box-5 { grid-column: 1; grid-row: 3 / 4; }
-.box-6 { grid-column: 2 / 4; grid-row: 3 / 4; }
-
-/* Fondo principal de .main */
-.main {
-  background: url('../Img/BG-Tables-texture.jpg');
-  background-repeat: repeat;
-}
-
-/* ===================== */
-/* CONTENIDO DE LAS BOXES*/
-/* ===================== */
-
-/* Contenido oculto de cada caja */
-.box-content {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.75);  /* Fondo oscuro */
+  gap: 1.5rem;
+}
+
+.accordion {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--primary);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-header {
   width: 100%;
+  background: var(--primary);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   padding: 1rem;
-  opacity: 0;                             /* Inicialmente oculto */
-  transform: translateY(100%);            /* Empujado hacia abajo */
-  transition: all 0.4s ease-in-out;       /* Transición suave */
-  font-size: 0.95rem;
+  gap: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: var(--accent);
+}
+
+.accordion-header img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.accordion-content {
+  background: var(--bg-light);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1rem;
+}
+
+.accordion-content.open {
+  padding: 1rem;
+  max-height: 1000px; /* Valor alto para que despliegue, controlado por JS */
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+  padding: 0.8rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product-item h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+}
+
+.product-item p {
+  margin: 0.2rem 0;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.buy-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.buy-button:hover {
+  background-color: var(--primary);
+}
+.accordion-header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.accordion-header img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.accordion-header span {
+  margin-top: 1rem;
+  font-size: 1.8rem;
   color: white;
 }
 
-/* Mostrar contenido al hacer hover */
-.box:hover .box-content {
-  opacity: 1;
-  transform: translateY(0%);
+.buy-button {
+  display: block;
+  margin: 0.5rem auto 0 auto;
+  text-align: center;
 }
 
-/* Fila de producto (imagen + texto) */
-.box-content .product {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Imagen de producto */
-.box-content .product img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-}
-
-/* ===================== */
-/* ESTÉTICA Y TIPOGRAFÍA */
-/* ===================== */
-.box-content p {
-  margin: 0.3rem 0;
+/* Responsive */
+@media (max-width: 768px) {
+  .product-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .accordion-header {
+    font-size: 1.2rem;
+  }
 }
